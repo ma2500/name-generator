@@ -1,13 +1,14 @@
-const names = [
-  'Eve',
-  'Nyx',
+const names = [ 
+  'Eve', 
+  'Nyx', 
 ];
 
 function generate() {
-  const r = Math.random() * names.length;
-  const idx = Math.floor(r);
+  var r = Math.random() * names.length,
+      idx = Math.floor(r);
 
-  return names[idx];
+  return
+ 	names[idx]
 }
 
 // default export
