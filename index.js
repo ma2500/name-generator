@@ -1,14 +1,14 @@
 const names = [
   'Eve',
-  'Nyx'
-]
+  'Nyx',
+];
 
-function generate () {
-  const r = Math.random() * names.length
-  const idx = Math.floor(r)
+function generate() {
+  const r = Math.random() * names.length;
+  const idx = Math.floor(r);
 
-  return names[idx]
+  return names[idx];
 }
 
 // default export
-module.exports = generate
+module.exports = generate;
