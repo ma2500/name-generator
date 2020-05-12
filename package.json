@@ -4,6 +4,7 @@
   "description": "Name generator",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint index.js test.js",
     "test": "node test.js"
   },
   "repository": {
@@ -15,5 +16,10 @@
     "name generator"
   ],
   "author": "Mushegh A.",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  }
 }
