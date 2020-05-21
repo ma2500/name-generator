@@ -13,4 +13,12 @@ jobs:
         with:
           node-version: '12'
       - run: npm install
-      - run: npm run lint
+      - name: Run linter
+        run: npm run lint:fix
+      - name: Add and commit fixes
+        uses: EndBug/add-and-commit@v4.2.0
+        with:
+          message: 'ci: fix linter issues'
+        env:
+          # This is necessary in order to push a commit to the repo
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
