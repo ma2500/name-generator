@@ -1,7 +1,7 @@
 const names = [
   'Eve',
-  'Nyx',
-];
+  'Nyx'
+]
 
 function generate() {
   const r = Math.random() * names.length;
