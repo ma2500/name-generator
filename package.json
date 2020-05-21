@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js test.js",
+    "lint:fix": "eslint --fix index.js test.js",
     "test": "node test.js"
   },
   "repository": {
