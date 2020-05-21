@@ -13,4 +13,8 @@ jobs:
         with:
           node-version: '12'
       - run: npm install
-      - run: npm run lint
+      - run: npm run lint:fix
+      - run: git config --local user.email "action@github.com"
+      - run: git config --local user.name "GitHub Action"
+      - run: git commit --all -m "ci: fix linter issues"
+
